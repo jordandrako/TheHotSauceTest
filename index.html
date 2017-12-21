@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hot Sauce List</title>
+    <link rel="stylesheet" href="css/hotsauce.css" />
+   
+  </head>
+  <body>
+
+    <!-- Application div -->
+    <div id="application"></div>
+
+    <script src="https://fb.me/react-15.1.0.min.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+    <script type="text/babel">
+      /*
+        We have provided you with sample application code to get you running. We encourage you 
+        to change this in any way you would like in order to complete the test. 
+        Any additional JavaScript can be placed in here or in a seperate file.
+      */
+
+      var Application = React.createClass({
+        render: function() {
+          return (
+            <p>
+              Hello applicant!
+            </p>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <Application />,
+        document.getElementById('application')
+      );
+    </script>
+  </body>
+</html>

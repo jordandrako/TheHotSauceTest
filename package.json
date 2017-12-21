@@ -19,12 +19,15 @@
   },
   "homepage": "https://github.com/fabricteam/HotSauceTest#readme",
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "styled-components": "^2.3.3",
+    "styled-normalize": "^2.2.1"
   },
   "devDependencies": {
-    "http-server": "^0.10.0",
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.1.0",
@@ -34,10 +37,15 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "http-server": "^0.10.0",
     "prettier": "^1.7.3"
   },
   "eslintConfig": {
-    "extends": ["airbnb", "prettier", "prettier/react"],
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react"
+    ],
     "parser": "babel-eslint",
     "parserOptions": {
       "ecmaVersion": 8,
@@ -59,8 +67,14 @@
           "argsIgnorePattern": "res|next|^err"
         }
       ],
-      "arrow-body-style": [2, "as-needed"],
-      "arrow-parens": [2, "always"],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
+      "arrow-parens": [
+        2,
+        "always"
+      ],
       "no-param-reassign": [
         2,
         {
@@ -83,7 +97,10 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [".js", ".jsx"]
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
         }
       ],
       "radix": 0,
@@ -91,7 +108,14 @@
         2,
         {
           "hoist": "all",
-          "allow": ["resolve", "reject", "done", "next", "err", "error"]
+          "allow": [
+            "resolve",
+            "reject",
+            "done",
+            "next",
+            "err",
+            "error"
+          ]
         }
       ],
       "quotes": [
@@ -106,10 +130,14 @@
       "jsx-a11y/anchor-is-valid": [
         "warn",
         {
-          "aspects": ["invalidHref"]
+          "aspects": [
+            "invalidHref"
+          ]
         }
       ]
     },
-    "plugins": ["html"]
+    "plugins": [
+      "html"
+    ]
   }
 }

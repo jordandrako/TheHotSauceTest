@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A test for canidates we want to hire.",
   "scripts": {
-    "start": "node build/start.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -15,6 +18,11 @@
     "url": "https://github.com/fabricteam/HotSauceTest/issues"
   },
   "homepage": "https://github.com/fabricteam/HotSauceTest#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
   "devDependencies": {
     "http-server": "^0.10.0",
     "babel-eslint": "^7.2.3",

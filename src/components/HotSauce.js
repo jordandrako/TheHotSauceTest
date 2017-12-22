@@ -9,9 +9,8 @@ const Card = styled.li`
   flex: 1;
   background: rgba(0, 0, 0, 0.8);
   color: ${colors.white};
-  margin: 0.5em;
+  margin: 0 0.5em 1rem;
   padding: 1em;
-  border-radius: 3px;
   min-width: 250px;
   display: block;
   position: relative;

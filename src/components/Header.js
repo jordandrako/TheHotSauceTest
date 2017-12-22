@@ -30,7 +30,8 @@ const Title = styled.h1`
 const SubTitle = styled.h2`
   display: block;
   padding: 0.3em;
-  background: #111;
+  margin: 0 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.8);
 `;
 
 const Header = () => (

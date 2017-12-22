@@ -2,7 +2,7 @@ export const colors = {
   white: '#E5E5E5',
   black: '#111',
   grey: '#444',
-  red: 'rgb(249, 111, 132)',
+  red: '#f93942',
   orange: '#ff512f',
   yellow: 'rgb(254, 225, 64)'
 };

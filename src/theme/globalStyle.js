@@ -37,7 +37,7 @@ injectGlobal`
       bottom: 0;
       left: 0;
       z-index: -1;
-      background-image: linear-gradient(-66deg, rgba(249, 111, 132,.7) 0%, rgba(254, 225, 64,.7) 100%);
+      background-image: linear-gradient(-66deg, rgba(249, 57, 66, .7) 0%, rgba(254, 225, 64,.7) 100%);
     }
   }
 

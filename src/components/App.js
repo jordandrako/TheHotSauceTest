@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Router from './Router';
+import Header from './Header';
 
 const Wrapper = styled.div`
   max-width: 1100px;
   margin: 0 auto;
-`;
-
-const Header = styled.header`
-  text-align: center;
 `;
 
 class App extends Component {
@@ -48,18 +45,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header>
-          <h1>
-            <span role="img" aria-label="Fire Emoji">
-              🔥
-            </span>{' '}
-            Hot Sauces{' '}
-            <span role="img" aria-label="Fire Emoji">
-              🔥
-            </span>
-          </h1>
-          <h2>A test app from Jordan Janzen</h2>
-        </Header>
+        <Header />
         <Router {...this.state} removeHotSauce={this.removeHotSauce} />
       </Wrapper>
     );

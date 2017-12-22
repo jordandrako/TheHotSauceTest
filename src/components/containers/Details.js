@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import { colors } from '../../theme/variables';
 
+import NotFound from './NotFound';
+
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -57,20 +59,24 @@ const Details = (props) => {
 
   const hotSauce = props.hotsauces.length > 0 && props.hotsauces[hotSauceIndex];
 
-  return (
-    <main>
-      <Row>
-        <Col>
-          <Title>{hotSauce.title}</Title>
-          <Image src={hotSauce.imageURL} alt={hotSauce.title} />
-        </Col>
-        <Col>
-          <Description>{hotSauce.description}</Description>
-          <GoBack to="/">&#11013; Go Back To Hot Sauce List</GoBack>
-        </Col>
-      </Row>
-    </main>
-  );
+  if (hotSauceIndex > -1) {
+    return (
+      <main>
+        <Row>
+          <Col>
+            <Title>{hotSauce.title}</Title>
+            <Image src={hotSauce.imageURL} alt={hotSauce.title} />
+          </Col>
+          <Col>
+            <Description>{hotSauce.description}</Description>
+            <GoBack to="/">&#11013; Go Back To Hot Sauce List</GoBack>
+          </Col>
+        </Row>
+      </main>
+    );
+  }
+
+  return <NotFound />;
 };
 
 Details.propTypes = {

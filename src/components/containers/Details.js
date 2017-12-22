@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { colors } from '../../theme/variables';
+
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -20,7 +22,7 @@ const Col = styled.div`
   word-wrap: break-word;
 
   &:last-child {
-    background: #111;
+    background: ${colors.black};
   }
 `;
 
@@ -44,14 +46,12 @@ const GoBack = styled(Link)`
 `;
 
 const Details = (props) => {
-  const hotSauceId = parseInt(props.match.params.hotSauceId);
+  const hotSauceId = parseInt(props.match.params.hotSauceId, 0);
   const hotSauceIndex = props.hotsauces.findIndex(
     (hotsauce) => hotsauce.id === hotSauceId
   );
 
   const hotSauce = props.hotsauces.length > 0 && props.hotsauces[hotSauceIndex];
-
-  console.log(hotSauce);
 
   return (
     <main>

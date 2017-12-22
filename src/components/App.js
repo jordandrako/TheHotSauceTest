@@ -39,6 +39,7 @@ class App extends Component {
     if (hotSauceIndex > -1) {
       hotsauces.splice(hotSauceIndex, 1);
     }
+
     this.setState({ hotsauces });
   }
 

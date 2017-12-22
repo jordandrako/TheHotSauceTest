@@ -1,9 +1,9 @@
 import React from 'react';
 
 const NotFound = () => (
-  <div>
-    <h1>Sorry, that page doesn't exist.</h1>
-  </div>
+  <main>
+    <h1 style={{ color: 'black' }}>Sorry, that page doesn't exist.</h1>
+  </main>
 );
 
 export default NotFound;

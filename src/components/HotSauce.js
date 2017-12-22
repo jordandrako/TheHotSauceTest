@@ -58,8 +58,6 @@ const Card = styled.li`
 
     .u-remove {
       display: block;
-      opacity: 1;
-      transform: scale(1);
     }
   }
 

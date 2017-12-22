@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { colors, theme } from '../theme/variables';
+import { colors } from '../theme/variables';
 
 const Card = styled.li`
+  flex: 1;
   background: rgba(0, 0, 0, 0.8);
   color: ${colors.white};
   margin: 0.5em;
   padding: 1em;
   border-radius: 3px;
-  width: calc(25% - 1em);
-  min-width: 200px;
+  min-width: 250px;
   display: block;
   position: relative;
   transition: all 0.2s ease-in-out;
@@ -35,7 +35,7 @@ const Card = styled.li`
     &:after {
       content: '';
       display: block;
-      background: red;
+      background: ${colors.red};
       width: 20px;
       height: 3px;
       position: absolute;
@@ -76,6 +76,7 @@ const Image = styled.img`
 `;
 
 const SauceTitle = styled.h3`
+  color: ${colors.yellow};
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5em;

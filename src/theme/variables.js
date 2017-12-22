@@ -1,10 +1,10 @@
 export const colors = {
   white: '#E5E5E5',
-  black: '#404040',
-  grey: '#696969',
-  red: '#FF3316',
-  yellow: '#ff0',
-  blue: '#202C3A'
+  black: '#111',
+  grey: '#444',
+  red: 'rgb(249, 111, 132)',
+  orange: '#ff512f',
+  yellow: 'rgb(254, 225, 64)'
 };
 
 export const typography = {

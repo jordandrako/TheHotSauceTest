@@ -17,6 +17,12 @@ const Card = styled.li`
   transition: all 0.2s ease-in-out;
   transform: scale(1) rotate(0);
 
+  > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   .u-remove {
     position: absolute;
     top: 0.5em;

@@ -20,7 +20,9 @@ const Col = styled.div`
   flex-direction: column;
   overflow: hidden;
   word-wrap: break-word;
-
+  &:first-child {
+    align-items: flex-start;
+  }
   &:last-child {
     background: ${colors.black};
   }
@@ -34,6 +36,8 @@ const Title = styled.h2`
 const Image = styled.img`
   display: block;
   margin: 0 auto;
+  max-height: 400px;
+  width: auto;
 `;
 
 const Description = styled.p`
